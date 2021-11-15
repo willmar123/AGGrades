@@ -1,0 +1,3 @@
+total of Imports: 0
+total of types declarations : 0
+total of methods declarations : 1

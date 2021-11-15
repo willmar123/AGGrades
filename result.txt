@@ -1,0 +1,1071 @@
+{"CompilationUnit": {
+   "ImportDeclaration": [
+      {"SimpleName": "torneidicalcio"},
+      {"QualifiedName": {"SimpleName": [
+         "java",
+         "util"
+      ]}}
+   ],
+   "TypeDeclaration": {
+      "MethodDeclaration": {
+         "SimpleType": [
+            {"SimpleName": "EccezioneTesseratoInesistente"},
+            {"SimpleName": "EccezioneErroreDatiTesseramento"}
+         ],
+         "SingleVariableDeclaration": {
+            "ArrayType": {
+               "SimpleType": {"SimpleName": "String"},
+               "Dimension": "[]"
+            },
+            "SimpleName": "args"
+         },
+         "SimpleName": "main",
+         "Block": {
+            "ExpressionStatement": [
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#######################################\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#          R1. Tornei e squadre       #\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#######################################\\n\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Definita federazione:\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "SimpleType": {"SimpleName": "Federazione"},
+                     "StringLiteral": [
+                        "\"FIGC\"",
+                        "\"Federazione Italiana Giuoco Calcio\"",
+                        "\"http://www.figc.it/\""
+                     ]
+                  },
+                  "SimpleName": "f"
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Sigla:    \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "f",
+                        "getSigla"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Nome:     \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "f",
+                        "getDenominazione"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Sito Web: \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "f",
+                        "getSitoWeb"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nDefinito nuovo torneo:\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "t",
+                  "MethodInvocation": {
+                     "StringLiteral": "\"Serie A\"",
+                     "SimpleName": [
+                        "f",
+                        "nuovoTorneo"
+                     ],
+                     "NumberLiteral": 20
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Nome:    \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "t",
+                        "getNome"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Squadre: \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "t",
+                        "getNumeroSquadre"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nDefinita nuova squadra.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Juventus\"",
+                     "\"Torino\"",
+                     "\"Juventus Stadium\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovaSquadra"
+                  ],
+                  "NumberLiteral": 1897
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nCerca squadra:\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "s",
+                  "MethodInvocation": {
+                     "StringLiteral": "\"Juventus\"",
+                     "SimpleName": [
+                        "f",
+                        "cercaSquadra"
+                     ]
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Nome:   \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "s",
+                        "getNome"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Citta': \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "s",
+                        "getCitta"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Anno:   \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "s",
+                        "getAnno"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Stadio: \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "s",
+                        "getStadio"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nDefiniti altri tornei.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Serie B\"",
+                  "SimpleName": [
+                     "f",
+                     "nuovoTorneo"
+                  ],
+                  "NumberLiteral": 22
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Lega Pro\"",
+                  "SimpleName": [
+                     "f",
+                     "nuovoTorneo"
+                  ],
+                  "NumberLiteral": 54
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nElenco tornei (ordine inserimento):\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "ParameterizedType": {"SimpleType": [
+                        {"SimpleName": "LinkedList"},
+                        {"SimpleName": "Torneo"}
+                     ]},
+                     "MethodInvocation": {"SimpleName": [
+                        "f",
+                        "elencoTornei"
+                     ]}
+                  },
+                  "SimpleName": "tornei"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nDefinite altre squadre.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Inter\"",
+                     "\"Milano\"",
+                     "\"Giuseppe Meazza\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovaSquadra"
+                  ],
+                  "NumberLiteral": 1908
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Lazio\"",
+                     "\"Roma\"",
+                     "\"Stadio Olimpico\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovaSquadra"
+                  ],
+                  "NumberLiteral": 1900
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Cremonese\"",
+                     "\"Cremona\"",
+                     "\"Giovanni Zini\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovaSquadra"
+                  ],
+                  "NumberLiteral": 1903
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Lumezzane\"",
+                     "\"Brescia\"",
+                     "\"Stadio Tullio Saleri\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovaSquadra"
+                  ],
+                  "NumberLiteral": 1946
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nElenco squadre federazione (ordine alfabetico):\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "ParameterizedType": {"SimpleType": [
+                        {"SimpleName": "LinkedList"},
+                        {"SimpleName": "Squadra"}
+                     ]},
+                     "MethodInvocation": {"SimpleName": [
+                        "f",
+                        "elencoSquadre"
+                     ]}
+                  },
+                  "SimpleName": "squadre"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nIscrizione 'Juventus' al torneo 'Serie A'\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Serie A\"",
+                     "\"Juventus\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "iscriviSquadraTorneo"
+                  ]
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nIscrizione altre squadre al torneo 'Serie A'.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Serie A\"",
+                     "\"Inter\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "iscriviSquadraTorneo"
+                  ]
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Serie A\"",
+                     "\"Lazio\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "iscriviSquadraTorneo"
+                  ]
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nElenco squadre iscritte al torneo 'Serie A' (ordine alfabetico):\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "ParameterizedType": {"SimpleType": [
+                        {"SimpleName": "LinkedList"},
+                        {"SimpleName": "Squadra"}
+                     ]},
+                     "MethodInvocation": {
+                        "StringLiteral": "\"Serie A\"",
+                        "SimpleName": [
+                           "f",
+                           "elencoSquadreTorneo"
+                        ]
+                     }
+                  },
+                  "SimpleName": "squadre"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\n#######################################\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#            R2. Tesserati            #\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#######################################\\n\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Nuovo tesseramento.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "numeroTessera",
+                  "MethodInvocation": {
+                     "StringLiteral": [
+                        "\"Mario\"",
+                        "\"Mandzukic\"",
+                        "\"Juventus\"",
+                        "\"Attaccante\""
+                     ],
+                     "SimpleName": [
+                        "f",
+                        "tesseramento"
+                     ],
+                     "NumberLiteral": 17
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\"\\nNumero di tessera assegnato: \"",
+                     "SimpleName": "numeroTessera"
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nCerca tesserato con numero di tessera '1000':\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "tesserato",
+                  "MethodInvocation": {
+                     "SimpleName": [
+                        "f",
+                        "cercaTesseratoPerNumeroTessera"
+                     ],
+                     "NumberLiteral": 1000
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nTesserato trovato: \"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Nome: \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "tesserato",
+                        "getNome"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" Cognome: \"",
+                     "MethodInvocation": {"SimpleName": [
+                        "tesserato",
+                        "getCognome"
+                     ]}
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nAggiunti altri tesserati (un dirigente, due calciatori ed un arbitro).\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Andrea\"",
+                     "\"Agnelli\"",
+                     "\"Juventus\"",
+                     "\"Presidente\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "tesseramento"
+                  ]
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Mario\"",
+                     "\"Lemina\"",
+                     "\"Juventus\"",
+                     "\"Centrocampista\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "tesseramento"
+                  ],
+                  "NumberLiteral": 18
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Paulo\"",
+                     "\"Dybala\"",
+                     "\"Juventus\"",
+                     "\"Attaccante\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "tesseramento"
+                  ],
+                  "NumberLiteral": 21
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Andrea\"",
+                     "\"Gervasoni\"",
+                     "\"Bari\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "tesseramento"
+                  ]
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nElenco tesserati 'Juventus' (ordinati per nome e cognome):\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "ParameterizedType": {"SimpleType": [
+                        {"SimpleName": "LinkedList"},
+                        {"SimpleName": "Tesserato"}
+                     ]},
+                     "MethodInvocation": {
+                        "StringLiteral": "\"Juventus\"",
+                        "SimpleName": [
+                           "f",
+                           "elencoTesseratiSquadra"
+                        ]
+                     }
+                  },
+                  "SimpleName": "tesserati"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\n#######################################\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#            R3. Incontri             #\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#######################################\\n\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Definiti incontri 'Serie A'.\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Serie A\"",
+                     "\"Juventus\"",
+                     "\"Inter\"",
+                     "\"5-1\"",
+                     "\"Andrea\"",
+                     "\"Gervasoni\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovoIncontro"
+                  ],
+                  "NumberLiteral": 1
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": [
+                     "\"Serie A\"",
+                     "\"Inter\"",
+                     "\"Lazio\"",
+                     "\"1-1\"",
+                     "\"Andrea\"",
+                     "\"Gervasoni\""
+                  ],
+                  "SimpleName": [
+                     "f",
+                     "nuovoIncontro"
+                  ],
+                  "NumberLiteral": 2
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nElenco incontri 'Serie A' (ordinati per giornata):\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "ClassInstanceCreation": {
+                     "ParameterizedType": {"SimpleType": [
+                        {"SimpleName": "LinkedList"},
+                        {"SimpleName": "Incontro"}
+                     ]},
+                     "MethodInvocation": {
+                        "StringLiteral": "\"Serie A\"",
+                        "SimpleName": [
+                           "f",
+                           "elencoIncontriPerGiornata"
+                        ]
+                     }
+                  },
+                  "SimpleName": "incontri"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\n#######################################\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#        R4. Punti e classifica       #\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"#######################################\\n\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"Punti 'Juventus':\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "punti",
+                  "MethodInvocation": {
+                     "StringLiteral": "\"Juventus\"",
+                     "SimpleName": [
+                        "f",
+                        "puntiSquadra"
+                     ]
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\" \"",
+                     "SimpleName": "punti"
+                  }
+               }},
+               {"MethodInvocation": {
+                  "StringLiteral": "\"\\nClassifica 'Serie A':\"",
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println"
+               }},
+               {"Assignment": {
+                  "SimpleName": "classifica",
+                  "MethodInvocation": {
+                     "StringLiteral": "\"Serie A\"",
+                     "SimpleName": [
+                        "f",
+                        "classificaTorneo"
+                     ]
+                  }
+               }},
+               {"MethodInvocation": {
+                  "QualifiedName": {"SimpleName": [
+                     "System",
+                     "out"
+                  ]},
+                  "SimpleName": "println",
+                  "InfixExpression": {
+                     "StringLiteral": "\"\"",
+                     "SimpleName": "classifica"
+                  }
+               }}
+            ],
+            "VariableDeclarationStatement": [
+               {
+                  "SimpleType": {"SimpleName": "Federazione"},
+                  "VariableDeclarationFragment": {"SimpleName": "f"}
+               },
+               {
+                  "SimpleType": {"SimpleName": "Torneo"},
+                  "VariableDeclarationFragment": {"SimpleName": "t"}
+               },
+               {
+                  "SimpleType": {"SimpleName": "Squadra"},
+                  "VariableDeclarationFragment": {"SimpleName": "s"}
+               },
+               {
+                  "ParameterizedType": {"SimpleType": [
+                     {"SimpleName": "LinkedList"},
+                     {"SimpleName": "Torneo"}
+                  ]},
+                  "VariableDeclarationFragment": {"SimpleName": "tornei"}
+               },
+               {
+                  "ParameterizedType": {"SimpleType": [
+                     {"SimpleName": "LinkedList"},
+                     {"SimpleName": "Squadra"}
+                  ]},
+                  "VariableDeclarationFragment": {"SimpleName": "squadre"}
+               },
+               {
+                  "VariableDeclarationFragment": {"SimpleName": "numeroTessera"},
+                  "PrimitiveType": "int"
+               },
+               {
+                  "SimpleType": {"SimpleName": "Tesserato"},
+                  "VariableDeclarationFragment": {"SimpleName": "tesserato"}
+               },
+               {
+                  "ParameterizedType": {"SimpleType": [
+                     {"SimpleName": "LinkedList"},
+                     {"SimpleName": "Tesserato"}
+                  ]},
+                  "VariableDeclarationFragment": {"SimpleName": "tesserati"}
+               },
+               {
+                  "ParameterizedType": {"SimpleType": [
+                     {"SimpleName": "LinkedList"},
+                     {"SimpleName": "Incontro"}
+                  ]},
+                  "VariableDeclarationFragment": {"SimpleName": "incontri"}
+               },
+               {
+                  "VariableDeclarationFragment": {"SimpleName": "punti"},
+                  "PrimitiveType": "int"
+               },
+               {
+                  "SimpleType": {"SimpleName": "String"},
+                  "VariableDeclarationFragment": {"SimpleName": "classifica"}
+               }
+            ],
+            "EnhancedForStatement": [
+               {
+                  "SingleVariableDeclaration": {
+                     "SimpleType": {"SimpleName": "Torneo"},
+                     "SimpleName": "ttemp"
+                  },
+                  "SimpleName": "tornei",
+                  "ExpressionStatement": {"MethodInvocation": {
+                     "QualifiedName": {"SimpleName": [
+                        "System",
+                        "out"
+                     ]},
+                     "SimpleName": "println",
+                     "InfixExpression": {
+                        "StringLiteral": [
+                           "\" \"",
+                           "\" \""
+                        ],
+                        "MethodInvocation": [
+                           {"SimpleName": [
+                              "ttemp",
+                              "getNome"
+                           ]},
+                           {"SimpleName": [
+                              "ttemp",
+                              "getNumeroSquadre"
+                           ]}
+                        ]
+                     }
+                  }}
+               },
+               {
+                  "SingleVariableDeclaration": {
+                     "SimpleType": {"SimpleName": "Squadra"},
+                     "SimpleName": "stemp"
+                  },
+                  "SimpleName": "squadre",
+                  "ExpressionStatement": {"MethodInvocation": {
+                     "QualifiedName": {"SimpleName": [
+                        "System",
+                        "out"
+                     ]},
+                     "SimpleName": "println",
+                     "InfixExpression": {
+                        "StringLiteral": "\" \"",
+                        "MethodInvocation": {"SimpleName": [
+                           "stemp",
+                           "getNome"
+                        ]}
+                     }
+                  }}
+               },
+               {
+                  "SingleVariableDeclaration": {
+                     "SimpleType": {"SimpleName": "Squadra"},
+                     "SimpleName": "stemp"
+                  },
+                  "SimpleName": "squadre",
+                  "ExpressionStatement": {"MethodInvocation": {
+                     "QualifiedName": {"SimpleName": [
+                        "System",
+                        "out"
+                     ]},
+                     "SimpleName": "println",
+                     "InfixExpression": {
+                        "StringLiteral": "\" \"",
+                        "MethodInvocation": {"SimpleName": [
+                           "stemp",
+                           "getNome"
+                        ]}
+                     }
+                  }}
+               },
+               {
+                  "IfStatement": {
+                     "IfStatement": {
+                        "InstanceofExpression": {
+                           "SimpleType": {"SimpleName": "Calciatore"},
+                           "SimpleName": "ttemp"
+                        },
+                        "ExpressionStatement": {"MethodInvocation": {
+                           "QualifiedName": {"SimpleName": [
+                              "System",
+                              "out"
+                           ]},
+                           "SimpleName": "println",
+                           "InfixExpression": {
+                              "StringLiteral": [
+                                 "\" \"",
+                                 "\" \"",
+                                 "\" (Calciatore)\""
+                              ],
+                              "MethodInvocation": [
+                                 {"SimpleName": [
+                                    "ttemp",
+                                    "getNome"
+                                 ]},
+                                 {"SimpleName": [
+                                    "ttemp",
+                                    "getCognome"
+                                 ]}
+                              ]
+                           }
+                        }}
+                     },
+                     "InstanceofExpression": {
+                        "SimpleType": {"SimpleName": "Dirigente"},
+                        "SimpleName": "ttemp"
+                     },
+                     "ExpressionStatement": {"MethodInvocation": {
+                        "QualifiedName": {"SimpleName": [
+                           "System",
+                           "out"
+                        ]},
+                        "SimpleName": "println",
+                        "InfixExpression": {
+                           "StringLiteral": [
+                              "\" \"",
+                              "\" \"",
+                              "\" (Dirigente)\""
+                           ],
+                           "MethodInvocation": [
+                              {"SimpleName": [
+                                 "ttemp",
+                                 "getNome"
+                              ]},
+                              {"SimpleName": [
+                                 "ttemp",
+                                 "getCognome"
+                              ]}
+                           ]
+                        }
+                     }}
+                  },
+                  "SingleVariableDeclaration": {
+                     "SimpleType": {"SimpleName": "Tesserato"},
+                     "SimpleName": "ttemp"
+                  },
+                  "SimpleName": "tesserati"
+               },
+               {
+                  "SingleVariableDeclaration": {
+                     "SimpleType": {"SimpleName": "Incontro"},
+                     "SimpleName": "itemp"
+                  },
+                  "SimpleName": "incontri",
+                  "ExpressionStatement": {"MethodInvocation": {
+                     "QualifiedName": {"SimpleName": [
+                        "System",
+                        "out"
+                     ]},
+                     "SimpleName": "println",
+                     "InfixExpression": {
+                        "StringLiteral": [
+                           "\" \"",
+                           "\" \"",
+                           "\" vs \"",
+                           "\" \"",
+                           "\"-\"",
+                           "\" \""
+                        ],
+                        "MethodInvocation": [
+                           {"SimpleName": [
+                              "itemp",
+                              "getGiornata"
+                           ]},
+                           {
+                              "SimpleName": "getNome",
+                              "MethodInvocation": {"SimpleName": [
+                                 "itemp",
+                                 "getSquadraCasa"
+                              ]}
+                           },
+                           {
+                              "SimpleName": "getNome",
+                              "MethodInvocation": {"SimpleName": [
+                                 "itemp",
+                                 "getSquadraOspite"
+                              ]}
+                           },
+                           {"SimpleName": [
+                              "itemp",
+                              "getNumeroGolSquadraCasa"
+                           ]},
+                           {"SimpleName": [
+                              "itemp",
+                              "getNumeroGolSquadraOspite"
+                           ]},
+                           {"SimpleName": [
+                              "itemp",
+                              "getArbitro"
+                           ]}
+                        ]
+                     }
+                  }}
+               }
+            ]
+         },
+         "PrimitiveType": "void",
+         "Modifier": [
+            "public",
+            "static"
+         ]
+      },
+      "SimpleName": "Esempio",
+      "Modifier": "public"
+   }
+}}
